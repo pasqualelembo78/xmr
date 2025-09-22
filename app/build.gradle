@@ -1,0 +1,76 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:8.2.1"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.0"
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    namespace "com.tuonome.myapp" // obbligatorio con AGP 8.x
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.tuonome.myapp"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        externalNativeBuild {
+            cmake {
+                cppFlags "-std=c++17"
+            }
+        }
+        ndkVersion "27.1.12297006"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("myapp-release.keystore") // percorso keystore
+            storePassword "desy2011"
+            keyAlias "myappkey"
+            keyPassword "desy2011"
+        }
+    }
+
+    buildTypes {
+        debug {
+            // debug build senza firma
+            signingConfig null
+        }
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "src/main/cpp/CMakeLists.txt"
+        }
+    }
+
+    // Allinea Java e Kotlin sulla stessa JVM (17)
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.0"
+implementation 'androidx.recyclerview:recyclerview:1.3.1'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
+}

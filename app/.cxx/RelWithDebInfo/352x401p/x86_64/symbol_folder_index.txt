@@ -1,0 +1,1 @@
+/root/MyApp/app/build/intermediates/cxx/RelWithDebInfo/352x401p/obj/x86_64

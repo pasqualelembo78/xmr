@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/root/MyApp/app/.cxx/RelWithDebInfo/352x401p/x86_64",
+  "command": "/root/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=x86_64-none-linux-android21 --sysroot=/root/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dnative_lib_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++17 -O2 -g -DNDEBUG -fPIC -o CMakeFiles/native-lib.dir/native-lib.cpp.o -c /root/MyApp/app/src/main/cpp/native-lib.cpp",
+  "file": "/root/MyApp/app/src/main/cpp/native-lib.cpp"
+}
+]
