@@ -1,0 +1,1 @@
+ninja: Entering directory `/root/MyApp/app/.cxx/RelWithDebInfo/352x401p/armeabi-v7a'

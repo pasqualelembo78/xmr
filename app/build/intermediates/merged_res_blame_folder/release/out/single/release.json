@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.tuonome.myapp-merged_res-26:/layout_item_transaction.xml.flat",
+        "source": "com.tuonome.myapp-main-27:/layout/item_transaction.xml"
+    },
+    {
+        "merged": "com.tuonome.myapp-merged_res-26:/layout_activity_main.xml.flat",
+        "source": "com.tuonome.myapp-main-27:/layout/activity_main.xml"
+    }
+]

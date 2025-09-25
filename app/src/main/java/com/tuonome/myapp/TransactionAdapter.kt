@@ -6,22 +6,22 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class TransactionAdapter(private val transactions: List<String>) :
-    RecyclerView.Adapter<TransactionAdapter.TransactionViewHolder>() {
+class TransactionAdapter(private val items: List<String>) :
+    RecyclerView.Adapter<TransactionAdapter.ViewHolder>() {
 
-    inner class TransactionViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val tvTransaction: TextView = itemView.findViewById(android.R.id.text1)
+    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val tvTransaction: TextView = view.findViewById(R.id.tvTransaction)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TransactionViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(android.R.layout.simple_list_item_1, parent, false)
-        return TransactionViewHolder(view)
+            .inflate(R.layout.item_transaction, parent, false)
+        return ViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: TransactionViewHolder, position: Int) {
-        holder.tvTransaction.text = transactions[position]
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.tvTransaction.text = items[position]
     }
 
-    override fun getItemCount(): Int = transactions.size
+    override fun getItemCount(): Int = items.size
 }

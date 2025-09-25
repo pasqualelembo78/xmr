@@ -1,0 +1,1 @@
+ninja: error: '/root/MyApp/app/src/main/cpp/prebuilt/armeabi-v7a/libmevacoind.a', needed by '/root/MyApp/app/build/intermediates/cxx/RelWithDebInfo/352x401p/obj/armeabi-v7a/libMevaCoinJNI.so', missing and no known rule to make it

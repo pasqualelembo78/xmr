@@ -1,0 +1,18 @@
+/root/Android/Sdk/cmake/3.22.1/bin/cmake \
+  -H/root/MyApp/app/src/main/cpp \
+  -DCMAKE_SYSTEM_NAME=Android \
+  -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+  -DCMAKE_SYSTEM_VERSION=21 \
+  -DANDROID_PLATFORM=android-21 \
+  -DANDROID_ABI=armeabi-v7a \
+  -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a \
+  -DANDROID_NDK=/root/Android/Sdk/ndk/27.1.12297006 \
+  -DCMAKE_ANDROID_NDK=/root/Android/Sdk/ndk/27.1.12297006 \
+  -DCMAKE_TOOLCHAIN_FILE=/root/Android/Sdk/ndk/27.1.12297006/build/cmake/android.toolchain.cmake \
+  -DCMAKE_MAKE_PROGRAM=/root/Android/Sdk/cmake/3.22.1/bin/ninja \
+  -DCMAKE_CXX_FLAGS=-std=c++17 \
+  -DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/root/MyApp/app/build/intermediates/cxx/RelWithDebInfo/352x401p/obj/armeabi-v7a \
+  -DCMAKE_RUNTIME_OUTPUT_DIRECTORY=/root/MyApp/app/build/intermediates/cxx/RelWithDebInfo/352x401p/obj/armeabi-v7a \
+  -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+  -B/root/MyApp/app/.cxx/RelWithDebInfo/352x401p/armeabi-v7a \
+  -GNinja

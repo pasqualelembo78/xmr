@@ -1,0 +1,4 @@
+/root/Android/Sdk/cmake/3.22.1/bin/ninja \
+  -C \
+  /root/MyApp/app/.cxx/RelWithDebInfo/352x401p/x86 \
+  native-lib

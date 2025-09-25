@@ -1,4 +1,5 @@
 # ninja log v5
-11	112	1758543030900939208	build.ninja	67672f8d9ab599c8
-871	907	1758542913624118135	/root/MyApp/app/build/intermediates/cxx/RelWithDebInfo/352x401p/obj/arm64-v8a/libnative-lib.so	71a5391c0011d9bd
-3	871	1758542913583118198	CMakeFiles/native-lib.dir/native-lib.cpp.o	283a619ccb245146
+2377	2418	1758704987391415598	/root/MyApp/app/build/intermediates/cxx/RelWithDebInfo/352x401p/obj/arm64-v8a/libnative-lib.so	71a5391c0011d9bd
+0	2374	1758704987342415664	CMakeFiles/native-lib.dir/native-lib.cpp.o	283a619ccb245146
+0	1596	1758779180299076612	CMakeFiles/MevaCoinJNI.dir/MevaCoinJNI.cpp.o	c675eb2594fda40b
+1597	1861	1758779180570076341	/root/MyApp/app/build/intermediates/cxx/RelWithDebInfo/352x401p/obj/arm64-v8a/libMevaCoinJNI.so	e5cdfcec3f6fe261

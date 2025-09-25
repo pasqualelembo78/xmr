@@ -17,10 +17,10 @@
     "{LIST_OF_TARGETS_TO_BUILD}"
   ],
   "libraries": {
-    "native-lib::@6890427a1f51a3e7e1df": {
-      "artifactName": "native-lib",
+    "MevaCoinJNI::@6890427a1f51a3e7e1df": {
+      "artifactName": "MevaCoinJNI",
       "abi": "arm64-v8a",
-      "output": "/root/MyApp/app/build/intermediates/cxx/RelWithDebInfo/352x401p/obj/arm64-v8a/libnative-lib.so",
+      "output": "/root/MyApp/app/build/intermediates/cxx/RelWithDebInfo/352x401p/obj/arm64-v8a/libMevaCoinJNI.so",
       "runtimeFiles": []
     }
   }

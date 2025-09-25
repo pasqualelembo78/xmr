@@ -1,0 +1,13 @@
+R_DEF: Internal format may change without notice
+local
+id btnInfo
+id btnReceive
+id btnSend
+id rvTransactions
+id tvAddress
+id tvBalance
+id tvTransaction
+layout activity_main
+layout item_transaction
+string app_name
+style AppTheme

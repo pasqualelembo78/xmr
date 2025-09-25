@@ -1,4 +1,3 @@
 # ninja log v5
-868	902	1758542915590115138	/root/MyApp/app/build/intermediates/cxx/RelWithDebInfo/352x401p/obj/x86/libnative-lib.so	bd80bcb300bc309d
-1	39	1758543031208938738	build.ninja	b31f47b54bdb7e8
-3	868	1758542915552115196	CMakeFiles/native-lib.dir/native-lib.cpp.o	f430cd10ec019441
+0	1950	1758704992497408713	CMakeFiles/native-lib.dir/native-lib.cpp.o	f430cd10ec019441
+1954	2084	1758704992639408521	/root/MyApp/app/build/intermediates/cxx/RelWithDebInfo/352x401p/obj/x86/libnative-lib.so	bd80bcb300bc309d
